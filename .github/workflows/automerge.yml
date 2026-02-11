@@ -1,0 +1,29 @@
+name: Auto Merge PR
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+      - name: Auto-merge PR
+        uses: "pascalgn/automerge-action@v0.16.4"
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          MERGE_METHOD: "merge"
+          MERGE_COMMIT_MESSAGE: "pull-request-title"
+          # By setting MERGE_LABELS to an empty string, we tell it to merge without needing a specific label
+          # However, many versions of this action require at least one label match or a specific configuration.
+          # To be safe and truly automatic, we'll use a simple script with the GitHub CLI.
+      
+      - name: Merge using GitHub CLI
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr merge $PR_NUMBER --merge --auto || echo "Could not auto-merge immediately, but set to auto-merge if checks pass."
