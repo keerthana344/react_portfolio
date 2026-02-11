@@ -1,0 +1,113 @@
+.about {
+    position: relative;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    max-width: 700px;
+    text-align: center;
+}
+
+.about__avatar {
+    flex-shrink: 0;
+}
+
+.about__avatar-ring {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    padding: 4px;
+    background: var(--accent-gradient);
+    animation: spin-slow 12s linear infinite;
+}
+
+.about__avatar-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin-slow 12s linear infinite reverse;
+}
+
+.about__avatar-letter {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about__description {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--text-secondary);
+}
+
+.about__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.about__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 32px 24px;
+    text-align: center;
+}
+
+.about__stat-value {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 800;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about__stat-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .about__stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+
+    .about__stat {
+        padding: 20px 12px;
+    }
+
+    .about__stat-value {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about__stats {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,109 @@
+.footer {
+    padding: 60px 0 0;
+    border-top: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.footer__brand {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.footer__logo-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: var(--accent-gradient);
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.footer__logo-text {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer__tagline {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    max-width: 280px;
+}
+
+.footer__heading {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer__links,
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__link {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transition: all var(--transition-base);
+}
+
+.footer__link:hover {
+    color: var(--accent-1);
+    transform: translateX(4px);
+}
+
+.footer__bottom {
+    padding: 24px 0;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.footer__bottom p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+    .footer__content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .footer__tagline {
+        margin: 0 auto;
+    }
+
+    .footer__links,
+    .footer__social {
+        align-items: center;
+    }
+}

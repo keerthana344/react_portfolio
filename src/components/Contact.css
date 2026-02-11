@@ -1,0 +1,121 @@
+.contact {
+    position: relative;
+}
+
+.contact__content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact__info-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+}
+
+.contact__info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(108, 99, 255, 0.1);
+    color: var(--accent-1);
+    flex-shrink: 0;
+}
+
+.contact__info-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.contact__info-value {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    transition: color var(--transition-base);
+}
+
+a.contact__info-value:hover {
+    color: var(--accent-1);
+}
+
+/* Form */
+.contact__form {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact__label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.contact__input {
+    padding: 14px 18px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    transition: all var(--transition-base);
+    outline: none;
+}
+
+.contact__input::placeholder {
+    color: var(--text-muted);
+}
+
+.contact__input:focus {
+    border-color: var(--accent-1);
+    background: rgba(108, 99, 255, 0.04);
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.1);
+}
+
+.contact__textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact__submit {
+    align-self: flex-start;
+    margin-top: 8px;
+}
+
+.contact__submit:disabled {
+    background: var(--accent-2);
+    box-shadow: 0 4px 15px rgba(0, 212, 170, 0.3);
+}
+
+@media (max-width: 768px) {
+    .contact__content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact__form {
+        padding: 28px 24px;
+    }
+}
