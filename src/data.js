@@ -69,7 +69,7 @@ export const profileData = {
         "An intelligent chatbot built with Python and Flask, featuring natural language processing capabilities and a modern, responsive web interface.",
       tags: ["Python", "Flask", "NLP", "REST API"],
       github: "https://github.com/keerthana344",
-      live: "#",
+      live: "https://github.com/keerthana344",
     },
     {
       title: "Portfolio Website",
@@ -77,7 +77,7 @@ export const profileData = {
         "A modern, responsive portfolio website built with React.js featuring smooth animations, dark theme, and glassmorphism design elements.",
       tags: ["React", "CSS", "JavaScript", "Vite"],
       github: "https://github.com/keerthana344",
-      live: "#",
+      live: "https://github.com/keerthana344",
     },
     {
       title: "Task Management System",
@@ -85,7 +85,7 @@ export const profileData = {
         "A full-stack web application for managing tasks and projects, with user authentication, real-time updates, and collaborative features.",
       tags: ["FastAPI", "React", "MongoDB", "JWT"],
       github: "https://github.com/keerthana344",
-      live: "#",
+      live: "https://github.com/keerthana344",
     },
     {
       title: "Machine Learning Predictor",
@@ -93,7 +93,7 @@ export const profileData = {
         "A machine learning project using TensorFlow and Keras for predictive analysis, with data visualization and model evaluation dashboards.",
       tags: ["Python", "TensorFlow", "Pandas", "ML"],
       github: "https://github.com/keerthana344",
-      live: "#",
+      live: "https://github.com/keerthana344",
     },
   ],
 
