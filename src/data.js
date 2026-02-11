@@ -11,8 +11,8 @@ export const profileData = {
   // Links
   linkedin: "https://www.linkedin.com/in/keerthana-y-452309314",
   github: "https://github.com/keerthana344/react_portfolio",
-  email: "keerthana@example.com",
-  resume: "/resume.pdf", // Link to the file in the public folder
+  email: "keerthana.y@example.com",
+  resume: "resume.pdf", // Link to the file in the public folder (relative to base path if needed)
 
   // About section
   about: {
@@ -118,10 +118,28 @@ export const profileData = {
   // Certifications
   certifications: [
     {
-      title: "Certification Name",
-      issuer: "Issuing Organization",
-      date: "Month Year",
-      link: "#",
+      title: "Python for Data Science and Machine Learning",
+      issuer: "Coursera / IBM",
+      date: "Dec 2024",
+      link: "https://www.coursera.org",
+    },
+    {
+      title: "Full Stack Web Development with React",
+      issuer: "Udemy / Meta",
+      date: "Oct 2024",
+      link: "https://www.udemy.com",
+    },
+    {
+      title: "AWS Certified Cloud Practitioner",
+      issuer: "Amazon Web Services",
+      date: "Aug 2024",
+      link: "https://aws.amazon.com",
+    },
+    {
+      title: "Google Data Analytics Professional Certificate",
+      issuer: "Google",
+      date: "Jun 2024",
+      link: "https://grow.google",
     },
   ],
 

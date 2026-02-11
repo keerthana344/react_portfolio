@@ -2,52 +2,55 @@
 
 /* ========== Design System ========== */
 :root {
-  /* Colors */
+  /* Colors - More sophisticated Slate & Indigo palette */
   --bg-primary: #0a0a0f;
-  --bg-secondary: #12121a;
-  --bg-card: rgba(255, 255, 255, 0.03);
-  --bg-card-hover: rgba(255, 255, 255, 0.06);
-  --bg-glass: rgba(255, 255, 255, 0.05);
+  --bg-secondary: #0f111a;
+  --bg-card: rgba(30, 41, 59, 0.4);
+  --bg-card-hover: rgba(30, 41, 59, 0.6);
+  --bg-glass: rgba(15, 23, 42, 0.7);
 
-  --text-primary: #f0f0f5;
-  --text-secondary: #a0a0b8;
-  --text-muted: #6b6b80;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
 
-  --accent-1: #6c63ff;
-  --accent-2: #00d4aa;
-  --accent-3: #ff6b9d;
-  --accent-gradient: linear-gradient(135deg, #6c63ff, #00d4aa);
-  --accent-gradient-2: linear-gradient(135deg, #ff6b9d, #6c63ff);
-  --accent-gradient-3: linear-gradient(135deg, #00d4aa, #6c63ff, #ff6b9d);
+  --accent-1: #6366f1;
+  /* Indigo */
+  --accent-2: #14b8a6;
+  /* Teal */
+  --accent-3: #8b5cf6;
+  /* Violet */
+  --accent-gradient: linear-gradient(135deg, #6366f1, #14b8a6);
+  --accent-gradient-2: linear-gradient(135deg, #8b5cf6, #6366f1);
+  --accent-gradient-3: linear-gradient(135deg, #14b8a6, #6366f1, #8b5cf6);
 
-  --border-color: rgba(255, 255, 255, 0.06);
-  --border-hover: rgba(108, 99, 255, 0.3);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(99, 102, 241, 0.4);
 
   /* Typography */
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
 
   /* Spacing */
-  --section-padding: 100px 0;
+  --section-padding: 120px 0;
   --container-width: 1200px;
   --container-padding: 0 24px;
 
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 30px rgba(108, 99, 255, 0.15);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 25px rgba(99, 102, 241, 0.2);
 
   /* Borders */
   --radius-sm: 8px;
   --radius-md: 12px;
-  --radius-lg: 20px;
-  --radius-xl: 28px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
 
   /* Transitions */
-  --transition-fast: 0.2s ease;
-  --transition-base: 0.3s ease;
-  --transition-slow: 0.5s ease;
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.4s ease;
 }
 
 /* ========== Reset & Base ========== */
@@ -79,7 +82,8 @@ a {
   color: inherit;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -200,6 +204,7 @@ img {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -211,6 +216,7 @@ img {
     opacity: 0;
     transform: translateX(-30px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -222,6 +228,7 @@ img {
     opacity: 0;
     transform: translateX(30px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -229,34 +236,73 @@ img {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(108, 99, 255, 0.15); }
-  50% { box-shadow: 0 0 40px rgba(108, 99, 255, 0.3); }
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(108, 99, 255, 0.15);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(108, 99, 255, 0.3);
+  }
 }
 
 @keyframes gradient-shift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink-caret {
-  0%, 100% { border-color: transparent; }
-  50% { border-color: var(--accent-1); }
+
+  0%,
+  100% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: var(--accent-1);
+  }
 }
 
 @keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .animate-on-scroll {
