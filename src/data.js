@@ -1,3 +1,5 @@
+import resumePdf from "./assets/resume.pdf";
+
 // ============================================================
 // PORTFOLIO DATA — Edit this file to customize your portfolio!
 // ============================================================
@@ -12,7 +14,7 @@ export const profileData = {
   linkedin: "https://www.linkedin.com/in/keerthana-y-452309314",
   github: "https://github.com/keerthana344/react_portfolio",
   email: "keerthana.y@example.com",
-  resume: "resume.pdf", // Link to the file in the public folder (relative to base path if needed)
+  resume: resumePdf,
 
   // About section
   about: {

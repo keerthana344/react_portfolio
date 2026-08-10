@@ -84,6 +84,22 @@ export default function Contact() {
                                 <a href={linkedin} target="_blank" rel="noopener noreferrer" className="contact__info-value">Connect on LinkedIn</a>
                             </div>
                         </div>
+
+                        <div className="contact__info-card glass-card">
+                            <div className="contact__info-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                    <polyline points="7 10 12 15 17 10" />
+                                    <line x1="12" y1="15" x2="12" y2="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 className="contact__info-label">Resume</h4>
+                                <a href={profileData.resume} download="Keerthana_Y_Resume.pdf" target="_blank" rel="noopener noreferrer" className="contact__info-value">
+                                    Download Resume (PDF)
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
                     <form className="contact__form glass-card" onSubmit={handleSubmit}>
