@@ -13,7 +13,7 @@ export const profileData = {
   // Links
   linkedin: "https://www.linkedin.com/in/keerthana-y-452309314",
   github: "https://github.com/keerthana344/react_portfolio",
-  email: "keerthana.y@example.com",
+  email: "keerthiyogesh771@gmail.com",
   resume: resumePdf,
 
   // About section
@@ -110,14 +110,14 @@ export const profileData = {
     },
     {
       degree: "Pre-University Course (PUC / XII)",
-      institution: "Pre-University College",
+      institution: "Marimallappa PU College",
       year: "2020 – 2022",
       description:
         "Completed Pre-University Education focusing on Physics, Chemistry, Mathematics, and Computer Science with 80% marks.",
     },
     {
       degree: "Secondary School Leaving Certificate (SSLC / 10th)",
-      institution: "Secondary High School",
+      institution: "Adarsha Vidyalaya",
       year: "2020",
       description:
         "Completed 10th Grade Secondary Schooling with an outstanding score of 91.52%.",
