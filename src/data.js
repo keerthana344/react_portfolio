@@ -103,17 +103,24 @@ export const profileData = {
   education: [
     {
       degree: "Bachelor of Technology in Computer Science",
-      institution: "University Name",
+      institution: "Maharaja Institute of Technology",
       year: "2022 – 2026",
       description:
         "Studying core computer science subjects including Data Structures, Algorithms, Database Management, Software Engineering, and Machine Learning.",
     },
     {
-      degree: "Higher Secondary Education (XII)",
-      institution: "School Name",
+      degree: "Pre-University Course (PUC / XII)",
+      institution: "Pre-University College",
       year: "2020 – 2022",
       description:
-        "Completed higher secondary education with a focus on Mathematics, Physics, and Computer Science.",
+        "Completed Pre-University Education focusing on Physics, Chemistry, Mathematics, and Computer Science with 80% marks.",
+    },
+    {
+      degree: "Secondary School Leaving Certificate (SSLC / 10th)",
+      institution: "Secondary High School",
+      year: "2020",
+      description:
+        "Completed 10th Grade Secondary Schooling with an outstanding score of 91.52%.",
     },
   ],
 
